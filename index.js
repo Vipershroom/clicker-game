@@ -8,7 +8,12 @@ function clicks() {
 }
 
 function shop() {
-    
+    let shopEl = document.getElementById('shop-el')
+    if (shopEl.style.display == "none") {
+        shopEl.style.display = "block"
+    } else {
+        shopEl.style.display = "none"
+    }
 }
 
  function twoTimes() {
@@ -32,5 +37,5 @@ function sixTimes() {
 }
 
 function manyTimes() {
-    
+
 }
