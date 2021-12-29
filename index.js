@@ -8,6 +8,7 @@ function clicks() {
 }
 
 function shop() {
+    console.log(":")
     let shopEl = document.getElementById('shop-el')
     if (shopEl.style.display == "none") {
         shopEl.style.display = "grid"
