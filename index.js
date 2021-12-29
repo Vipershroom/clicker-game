@@ -37,8 +37,8 @@ function shop() {
  }
 
  function fourTimes() {
-     if (counts >= 450 && fourMax == false) {
-         counts -= 450
+     if (counts >= 250 && fourMax == false) {
+         counts -= 250
          increment *= 4
          amountEl.textContent = `Amount: ${counts}`
          fourMax = true
