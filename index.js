@@ -45,7 +45,7 @@ function shop() {
 }
 
  function twoTimes() {
-     if (counts >= 50 && twoMax == false) {
+     if (counts >= 50 && max.twoMax == false) {
          counts -= 50
          increment *= 2
          amountEl.textContent = `Amount: ${counts}`
@@ -54,7 +54,7 @@ function shop() {
  }
 
  function fourTimes() {
-     if (counts >= 250 && fourMax == false) {
+     if (counts >= 250 && max.fourMax == false) {
          counts -= 250
          increment *= 4
          amountEl.textContent = `Amount: ${counts}`
@@ -63,7 +63,7 @@ function shop() {
 }
 
 function mrZom() {
-     if (counts >= 150 && mrZomMax == false) {
+     if (counts >= 150 && max.mrZomMax == false) {
          counts -= 150
          setInterval(clicks, 5000)
          amountEl.textContent = `Amount: ${counts}`
@@ -72,7 +72,7 @@ function mrZom() {
 }
 
 function autoClicker() {
-    if (counts >= 500 && autoClickerMax == false) {
+    if (counts >= 500 && max.autoClickerMax == false) {
         counts -= 500
         setInterval(clicks, 1000)
         amountEl.textContent = `Amount: ${counts}`
@@ -81,7 +81,7 @@ function autoClicker() {
 }
 
 function sixTimes() {
-     if (counts >= 700 && sixMax == false) {
+     if (counts >= 700 && max.sixMax == false) {
          counts -= 700
          increment *= 6
          amountEl.textContent = `Amount: ${counts}`
@@ -90,7 +90,7 @@ function sixTimes() {
 }
 
 function manyTimes() {
-    if (counts >= 10000000 && manyMax == false) {
+    if (counts >= 10000000 && max.manyMax == false) {
         counts -= 10000000
         increment *= 10000000
         amountEl.textContent = `Amount: ${counts}`
