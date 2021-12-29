@@ -11,6 +11,19 @@ let max = {
     manyMax: false
 }
 
+document.onload = updateScore()
+
+function saveGame() {
+    localStorage.setItem('score',counts);
+    
+}
+
+function updateScore() {
+    let updated = Number(localStorage.getItem('score'))
+    counts += updated
+    amountEl.textContent = `Amount: ${counts}`
+}
+
 function debugMagic() {
     counts += 10000000
 }
@@ -18,6 +31,7 @@ function debugMagic() {
 function clicks() {
     counts += increment
     amountEl.textContent = `Amount: ${counts}`
+    saveGame()
 }
 
 function shop() {
