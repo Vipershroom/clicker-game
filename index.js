@@ -1,12 +1,15 @@
 let amountEl = document.getElementById('amount-el')
 let counts = 0
 let increment = 1
-let twoMax = false
-let fourMax = false
-let mrZomMax = false
-let autoClickerMax = false
-let sixMax = false
-let manyMax = false
+
+let max = {
+    twoMax: false,
+    fourMax: false,
+    mrZomMax: false,
+    autoClickerMax: false,
+    sixMax: false,
+    manyMax: false
+}
 
 function debugMagic() {
     counts += 10000000
@@ -32,7 +35,7 @@ function shop() {
          counts -= 50
          increment *= 2
          amountEl.textContent = `Amount: ${counts}`
-         twoMax = true
+         max.twoMax = true
      }
  }
 
@@ -41,7 +44,7 @@ function shop() {
          counts -= 250
          increment *= 4
          amountEl.textContent = `Amount: ${counts}`
-         fourMax = true
+         max.fourMax = true
      }
 }
 
@@ -50,7 +53,7 @@ function mrZom() {
          counts -= 150
          setInterval(clicks, 5000)
          amountEl.textContent = `Amount: ${counts}`
-         mrZomMax = true
+         max.mrZomMax = true
      }
 }
 
@@ -59,7 +62,7 @@ function autoClicker() {
         counts -= 500
         setInterval(clicks, 1000)
         amountEl.textContent = `Amount: ${counts}`
-        autoClickerMax = true
+        max.autoClickerMax = true
     }
 }
 
@@ -68,7 +71,7 @@ function sixTimes() {
          counts -= 700
          increment *= 6
          amountEl.textContent = `Amount: ${counts}`
-         sixMax = true
+         max.sixMax = true
      }
 }
 
@@ -77,7 +80,7 @@ function manyTimes() {
         counts -= 10000000
         increment *= 10000000
         amountEl.textContent = `Amount: ${counts}`
-        manyMax == true
+        max.manyMax == true
     }
 }
 
