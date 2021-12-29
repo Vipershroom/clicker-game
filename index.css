@@ -31,3 +31,38 @@ body {
         width: 35vw;
     }
 }
+
+@media screen and (max-width: 768px){
+    #shop-el {
+        width: 75vw;
+        height: 65vh;
+        font-size: 3vw;
+    }
+    #button-el {
+        width: 16vw;
+        height: 3vw;
+    }
+    h1, h2 {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #button-el {
+        width: 16vw;
+        height: 5vw;
+    }
+
+    #shop-el {
+        width: 85vw;
+    }
+}
+
+
+
+@media screen and (max-width: 375px){
+    #button-el {
+        width: 15vw;
+        height: 3.5vh;
+    }
+}
