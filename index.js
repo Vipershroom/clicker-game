@@ -24,6 +24,17 @@ function updateScore() {
     amountEl.textContent = `Amount: ${counts}`
 }
 
+function clearFunc() {
+    if (confirm("WARNING! This will clear all your clicks. Press OK to accept")) {
+        localStorage.removeItem('score')
+        counts = 0
+        amountEl.textContent = `Amount: ${counts}`
+
+    } else {
+        console.log("Your score lives another day")
+    }
+}
+
 function debugMagic() {
     counts += 10000000
 }
