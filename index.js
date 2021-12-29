@@ -4,12 +4,12 @@ let increment = 1
 let twoMax = false
 let fourMax = false
 let mrZomMax = false
-let autoClicker = false
+let autoClickerMax = false
 let sixMax = false
 let manyMax = false
 
 function debugMagic() {
-    counts += 100000
+    counts += 10000000
 }
 
 function clicks() {
@@ -54,15 +54,30 @@ function mrZom() {
      }
 }
 
-function autoClickerfunc() {
-     
+function autoClicker() {
+    if (counts >= 500 && autoClickerMax == false) {
+        counts -= 500
+        setInterval(clicks, 1000)
+        amountEl.textContent = `Amount: ${counts}`
+        autoClickerMax = true
+    }
 }
 
 function sixTimes() {
-     
+     if (counts >= 700 && sixMax == false) {
+         counts -= 700
+         increment *= 6
+         amountEl.textContent = `Amount: ${counts}`
+         sixMax = true
+     }
 }
 
 function manyTimes() {
-
+    if (counts >= 10000000 && manyMax == false) {
+        counts -= 10000000
+        increment *= 10000000
+        amountEl.textContent = `Amount: ${counts}`
+        manyMax == true
+    }
 }
 
