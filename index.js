@@ -10,3 +10,27 @@ function clicks() {
 function shop() {
     
 }
+
+ function twoTimes() {
+
+ }
+
+ function fourTimes() {
+     
+}
+
+function mrZom() {
+     
+}
+
+function autoClicker() {
+     
+}
+
+function sixTimes() {
+     
+}
+
+function manyTimes() {
+    
+}
