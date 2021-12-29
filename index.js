@@ -5,8 +5,8 @@ let twoMax = false
 let fourMax = false
 let mrZom = false
 let autoClicker = false
-let sixTimes = false
-let manyTimes = false
+let sixMax = false
+let manyMax = false
 
 function debugMagic() {
     counts += 100000
@@ -37,14 +37,19 @@ function shop() {
  }
 
  function fourTimes() {
+     if (counts >= 450 && fourMax == false) {
+         counts -= 450
+         increment *= 4
+         amountEl.textContent = `Amount: ${counts}`
+         fourMax = true
+     }
+}
+
+function mrZomfunc() {
      
 }
 
-function mrZom() {
-     
-}
-
-function autoClicker() {
+function autoClickerfunc() {
      
 }
 
