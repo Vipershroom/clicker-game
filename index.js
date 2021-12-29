@@ -1,7 +1,12 @@
 let amountEl = document.getElementById('amount-el')
 let counts = 0
+let increment = 1
 
 function clicks() {
-    counts += 1
+    counts += increment
     amountEl.textContent = `Amount: ${counts}`
+}
+
+function shop() {
+    
 }
