@@ -28,8 +28,8 @@ function shop() {
 }
 
  function twoTimes() {
-     if (counts >= 100 && twoMax == false) {
-         counts -= 100
+     if (counts >= 50 && twoMax == false) {
+         counts -= 50
          increment *= 2
          amountEl.textContent = `Amount: ${counts}`
          twoMax = true
