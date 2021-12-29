@@ -10,7 +10,7 @@ function clicks() {
 function shop() {
     let shopEl = document.getElementById('shop-el')
     if (shopEl.style.display == "none") {
-        shopEl.style.display = "block"
+        shopEl.style.display = "grid"
     } else {
         shopEl.style.display = "none"
     }
