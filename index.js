@@ -3,7 +3,7 @@ let counts = 0
 let increment = 1
 let twoMax = false
 let fourMax = false
-let mrZom = false
+let mrZomMax = false
 let autoClicker = false
 let sixMax = false
 let manyMax = false
@@ -45,8 +45,13 @@ function shop() {
      }
 }
 
-function mrZomfunc() {
-     
+function mrZom() {
+     if (counts >= 150 && mrZomMax == false) {
+         counts -= 150
+         setInterval(clicks, 5000)
+         amountEl.textContent = `Amount: ${counts}`
+         mrZomMax = true
+     }
 }
 
 function autoClickerfunc() {
