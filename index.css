@@ -10,7 +10,7 @@ body {
     align-items: center;
 }
 
-button > .clicker-container {
+#button-el {
     width: 8vw;
 }
 
