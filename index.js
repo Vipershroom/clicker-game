@@ -28,7 +28,14 @@ function clearFunc() {
     if (confirm("WARNING! This will clear all your clicks. Press OK to accept")) {
         localStorage.removeItem('score')
         counts = 0
+        increment = 1
         amountEl.textContent = `Amount: ${counts}`
+        max.twoMax = false
+        max.fourMax = false
+        max.mrZomMax = false
+        max.autoClickerMax = false
+        max.sixMax = false
+        max.manyMax = false
 
     } else {
         console.log("Your score lives another day")
@@ -105,7 +112,7 @@ function manyTimes() {
         counts -= 10000000
         increment *= 10000000
         amountEl.textContent = `Amount: ${counts}`
-        max.manyMax == true
+        max.manyMax = true
     }
 }
 
